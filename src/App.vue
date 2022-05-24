@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Drawing Interface</h1>
+
+    <div id="drawing-interface">
+      <DrawingInterface />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DrawingInterface from "./components/DrawingInterface.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    DrawingInterface,
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 1366px;
+  height: 1024px;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+#app h1 {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+#drawing-interface {
+  width: 1024px;
+  height: 768px;
+  margin: auto;
+  border: 1px dashed #aaa;
 }
 </style>
